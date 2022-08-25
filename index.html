@@ -5,9 +5,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rock-Paper-Scissors</title>
-	<script src="./script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-	
+	<h1>Rock-Paper-Scissors</h1>
+	<div class="gameboard">
+		<div class="scores">
+			<div class="score humanScore">0</div>
+			<div> - </div>
+			<div class="score computerScore">0</div>
+		</div>
+		<div class="batterfield">
+			<div class="container">
+				<div class="player">HUMAN</div>
+				<div class="weapons left">
+					<img class="weapon" data-id="Rock" src="./images/rock.png" alt="weapon">
+					<img class="weapon" data-id="Paper" src="./images/paper.png" alt="weapon">
+					<img class="weapon" data-id="Scissors" src="./images/scissors.png" alt="weapon">
+				</div>
+			</div>
+			
+			<div class="container ">
+				<div class="weapons right">
+					<img class="weapon" data-id="Rock" src="./images/rock.png" alt="weapon">
+					<img class="weapon" data-id="Paper" src="./images/paper.png" alt="weapon">
+					<img class="weapon" data-id="Scissors"src="./images/scissors.png" alt="weapon">
+				</div>
+				<div class="player">COMPUTER</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal">
+		<div class="notification">
+			<div class="gameResult">You win</div>
+			<button class="reload">Play Again</button>
+
+		</div>
+	</div>
 </body>
 </html>
